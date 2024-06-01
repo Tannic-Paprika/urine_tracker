@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Urine Stick Image</title>
+</head>
+<body>
+    <h1>Upload Urine Stick Image</h1>
+    <form method="post" enctype="multipart/form-data" id="uploadForm">
+        {% csrf_token %}
+        <input type="file" name="image" id="imageInput">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
